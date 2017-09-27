@@ -1,0 +1,83 @@
+ .container {
+     position: relative;
+     width: 1170;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .general__navigation {
+     position: absolute;
+     top: 35;
+     left: 50;
+     right: 50;
+     height: 35;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .general__header-contact {
+     flex: 1 1 auto;
+     margin-left: 30;
+     display: flex;
+ }
+ 
+ .general__header-break {
+     display: block;
+     height: 35;
+     width: 1;
+     opacity: 0.5;
+ }
+ 
+ .general__header-right {
+     display: flex;
+     flex: 1 1 auto;
+     justify-content: flex-end;
+     align-items: center;
+ }
+ 
+ .general__header-rightt {
+     margin-right: 30;
+     display: block;
+     text-decoration: none;
+     color: inherit;
+ }
+ 
+ .general__header-dropdown {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .general__section {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-image: url(../images/header.png);
+     color: #fff;
+     padding-bottom: 260;
+     position: relative;
+ }
+ 
+ .general__information-title {
+     font-size: 50px;
+     font-weight: 300;
+     line-height: 1.25;
+     width: 510px;
+ }
+ 
+ .general__information {
+     padding-top: 60px;
+     padding-bottom: 60px;
+     width: 510px;
+ }
+ 
+ .general__button {
+     width: 141px;
+     height: 140px;
+     position: absolute;
+     text-decoration: none;
+     top: 370;
+     right: 600;
+     background-repeat: no-repeat;
+     background-size: 140px 140px;
+     background-image: url(../images/playbutton.png);
+ }

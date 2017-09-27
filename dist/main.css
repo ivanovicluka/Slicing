@@ -406,171 +406,120 @@ template {
           box-sizing: border-box; }
 
 body {
+  font-size: 18;
   font-family: 'Open Sans'; }
 
-*::-moz-selection {
-  background: #FFCB46; }
-
-*::selection {
-  background: #FFCB46; }
-
-a {
-  text-decoration: none; }
-
 .container {
-  max-width: 80%;
-  margin: 0 auto;
-  overflow: hidden; }
+  position: relative;
+  width: 1170;
+  margin-left: auto;
+  margin-right: auto; }
+
+.general__navigation {
+  position: absolute;
+  top: 35;
+  left: 50;
+  right: 50;
+  height: 35;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.general__header-contact {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-left: 30;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.general__header-break {
+  display: block;
+  height: 35;
+  width: 1;
+  opacity: 0.5; }
+
+.general__header-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.general__header-rightt {
+  margin-right: 30;
+  display: block;
+  text-decoration: none;
+  color: inherit; }
+
+.general__header-dropdown {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .general__section {
-  background-image: url("/images/national-programs-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   -moz-background-size: cover;
        background-size: cover;
-  background-position: center center; }
+  background-image: url(../images/header.png);
+  color: #fff;
+  padding-bottom: 260;
+  position: relative; }
 
-.general__container {
-  width: 90%;
-  max-width: 1100px;
-  padding: 20px; }
+.general__information-title {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.25;
+  width: 510px; }
 
-.general__projects {
-  width: 450px;
-  float: left;
-  margin: 30px 0px 50px; }
+.general__information {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 510px; }
 
-.general__content {
-  width: 500px;
-  float: right; }
-
-.general__projects-label {
-  color: white;
-  font-style: italic;
-  margin-top: 5px;
-  margin-bottom: 10px; }
-
-.general__project-container {
-  cursor: pointer;
-  width: 100%;
-  background-color: white;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  overflow: hidden; }
-
-.general__project {
-  overflow: hidden; }
-
-.general__project::hover {
-  background-color: #F2F2F2;
-  -webkit-transition-duration: .25s;
-     -moz-transition-duration: .25s;
-       -o-transition-duration: .25s;
-          transition-duration: .25s; }
-
-.general__project-info {
-  margin: 25px 30px 20px; }
-
-.general__icon {
-  float: left;
-  max-height: 50px;
-  max-width: 50px;
-  margin-right: 40px; }
-
-.general__icon-special {
-  margin-top: 10px; }
-
-.general__project-name {
-  color: #414142;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 50px;
-  height: 50px; }
-
-.general__title {
-  margin-top: 120px;
-  margin-bottom: 25px;
-  color: white;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: .5px; }
-
-.general__text {
-  font-size: 16px;
-  line-height: 28px;
-  color: white; }
-
-@media (max-width: 1200px) {
-  .general__title {
-    font-size: 28px;
-    margin-top: 140px; }
-  .general__text {
-    font-size: 14px;
-    line-height: 24px; }
-  .general__project-name {
-    font-size: 14px; }
-  .general__icon {
-    max-height: 40px;
-    max-width: 40px;
-    margin-right: 25px; }
-  .general__project-info {
-    margin: 15px 20px 10px; }
-  .general__projects {
-    width: 370px; } }
-
-@media (max-width: 1055px) {
-  .general__projects {
-    float: none;
-    margin: 50px auto;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-       -moz-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
-  .general__content {
-    float: none;
-    width: 100%; }
-  .general__container {
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: column;
-       -moz-box-orient: vertical;
-       -moz-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column; }
-  .general__title {
-    margin-top: 35px; } }
-
-@media (max-width: 992px) {
-  .general__text {
-    font-size: 16px;
-    line-height: 28px; }
-  .general__container {
-    width: 95%; }
-  .general__icon {
-    width: 40px;
-    max-height: 50px;
-    max-width: 50px; } }
-
-@media (max-width: 544px) {
-  .general__container {
-    width: 100%; }
-  .general__content {
-    width: 90%;
-    margin: 0 auto; }
-  .general__title {
-    line-height: 40px; }
-  .general__projects {
-    width: 90%;
-    margin: 40px auto; } }
-
-@media (max-width: 435px) {
-  .general__project-name {
-    margin: 25px 0 0;
-    line-height: 1.3; } }
+.general__button {
+  width: 141px;
+  height: 140px;
+  position: absolute;
+  text-decoration: none;
+  top: 370;
+  right: 600;
+  background-repeat: no-repeat;
+  -moz-background-size: 140px 140px;
+       background-size: 140px 140px;
+  background-image: url(../images/playbutton.png); }
